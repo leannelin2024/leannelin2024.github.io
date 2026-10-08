@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - LeAnne Lin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <div class="top-label">top of page</div>
+  <header class="site-header">
+    <a class="brand" href="/">LeAnne Lin</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-toggle">Media <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="/media/videos">Videos</a>
+          <a href="/media/photos">Photos</a>
+        </div>
+      </div>
+      <a href="/headshot-and-resume">Headshot &amp; Resume</a>
+      <a href="/contact" class="active">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section class="page-header">
+      <h1>Contact</h1>
+      <p class="subhead">Booking - Collaborations - Press</p>
+      <div class="divider" aria-hidden="true"></div>
+    </section>
+    <main class="contact-wrap">
+      <p class="bio intro">For bookings, press, or collaborations, use the form below. Messages are logged to your local server terminal - no email is actually sent.</p>
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mvkgbljz" method="POST">
+        <label><span>Name</span><input type="text" name="name" required autocomplete="name" /></label>
+        <label><span>Email</span><input type="email" name="email" required autocomplete="email" /></label>
+        <label><span>Message</span><textarea name="message" rows="6" required></textarea></label>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> LeAnne Lin</p>
+    <p class="bottom-note">bottom of page</p>
+  </footer>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/contact.js" defer></script>
+</body>
+</html>
+
